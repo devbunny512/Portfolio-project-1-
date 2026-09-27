@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NIL DEV — Bunny's portfolio. HTML, CSS, JavaScript and Node.js developer building fast, SEO-friendly websites.">
+  <title>NIL DEV - PORTFOLIO</title>
+  <!--links-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+  <!--nav section-->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.jpeg" alt="NIL DEV logo" />
+        <h2>NIL DEV</h2>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about me</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">hire me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsec" id="home">
+      <div class="top">
+        <h3>Hi there i'm <span>BUNNY</span></h3>
+        <!-- Element to contain animated typing -->
+        <span id="element"></span>
+        <div class="hero-img">
+          <img src="bg.png" alt="Illustration representing Bunny's web development work" />
+        </div>
+      </div>
+
+      <span class="text-grey">WORK SUMMARY</span>
+      <div class="bottom">
+        <div class="box">
+          <span>TOTAL CLIENTS</span>
+          <h2>15+</h2>
+        </div>
+        <div class="box">
+          <span>WORK HOUR</span>
+          <h2>450 Hr</h2>
+        </div>
+        <div class="box box3">
+          <span>WORKING RATE</span>
+          <h2>4.5</h2>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondsec" id="about">
+      <div class="content2">
+        <span class="text-grey">ABOUT ME</span>
+      </div>
+      <div class="abtMeGrid">
+        <div class="abtMeBox">
+          <div class="expLogo"><i class="fa-brands fa-html5"></i></div>
+          <h2>HTML DEVELOPER</h2>
+          <p>Web developer for 18 months, comfortable applying every HTML tag and building semantic, SEO-friendly markup.</p>
+        </div>
+        <div class="abtMeBox">
+          <div class="expLogo"><i class="fa-brands fa-css3-alt"></i></div>
+          <h2>CSS DEVELOPER</h2>
+          <p>I style responsive, accessible layouts using modern CSS — flexbox, grid, and thoughtful animation.</p>
+        </div>
+        <div class="abtMeBox">
+          <div class="expLogo"><i class="fa-brands fa-js"></i></div>
+          <h2>JS DEVELOPER</h2>
+          <p>I build interactive front-ends with vanilla JavaScript and modern ES6+ features.</p>
+        </div>
+        <div class="abtMeBox">
+          <div class="expLogo"><i class="fa-brands fa-node"></i></div>
+          <h2>NODE.JS DEVELOPER</h2>
+          <p>I build REST APIs and back-end services with Node.js, Express, and MongoDB.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="thirdsec" id="projects">
+      <div>
+        <span class="text-grey">PROJECTS</span>
+      </div>
+      <div class="projectGrid">
+        <a class="projectTab" href="#">
+          <div class="proc">
+            <div class="projectPoster">
+              <img src="poster.jpeg" alt="Portfolio project preview" loading="lazy" />
+            </div>
+            <div class="projectBrief">
+              <div class="text">
+                <h3>Portfolio Project</h3>
+                <p>My own portfolio site — click to see more about it.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="projectTab" href="#">
+          <div class="proc">
+            <div class="projectPoster">
+              <img src="poster.jpeg" alt="Portfolio project preview" loading="lazy" />
+            </div>
+            <div class="projectBrief">
+              <div class="text">
+                <h3>Portfolio Project</h3>
+                <p>My own portfolio site — click to see more about it.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="projectTab" href="#">
+          <div class="proc">
+            <div class="projectPoster">
+              <img src="poster.jpeg" alt="Portfolio project preview" loading="lazy" />
+            </div>
+            <div class="projectBrief">
+              <div class="text">
+                <h3>Portfolio Project</h3>
+                <p>My own portfolio site — click to see more about it.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="fourthsec" id="contact">
+      <div>
+        <span class="text-grey">HIRE ME</span>
+      </div>
+      <div class="contactBox">
+        <p>Have a project in mind? I'm available for freelance work — send a message and let's build it together.</p>
+        <form class="contactForm" action="#" method="POST">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 NIL DEV. All rights reserved.</p>
+    <div class="socials">
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['WEB DESIGNER.', 'WEB DEVELOPER.'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
